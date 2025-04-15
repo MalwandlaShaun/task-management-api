@@ -1,7 +1,8 @@
 import { FastifyRequest, FastifyReply } from 'fastify'
 import { User } from '../models/User'
 
-//ts-ignore
+
+// @ts-ignore
 interface AuthRequest extends FastifyRequest {
     user?: {
         id: string

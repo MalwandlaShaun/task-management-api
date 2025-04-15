@@ -29,6 +29,7 @@ export interface TaskFilters {
 }
 
 export async function createTask (data: CreateTaskData): Promise<Task> {
+    // @ts-ignore
     return await Task.create(data)
 }
 

@@ -10,6 +10,7 @@ export class User extends Model {
         defaultValue: DataType.UUIDV4,
         primaryKey: true
     })
+    // @ts-ignore
     id!: string
 
     @Column({

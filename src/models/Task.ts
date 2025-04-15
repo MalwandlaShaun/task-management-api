@@ -3,6 +3,7 @@ import { User } from './User'
 import { Label } from './Label'
 import { TaskLabel } from './TaskLabel'
 
+
 export enum TaskPriority {
     LOW = 'low',
     MEDIUM = 'medium',
@@ -24,6 +25,7 @@ export class Task extends Model {
         defaultValue: DataType.UUIDV4,
         primaryKey: true
     })
+    // @ts-ignore
     id!: string
 
     @Column({

@@ -13,6 +13,7 @@ export class TaskLabel extends Model {
         allowNull: false,
         primaryKey: true
     })
+
     taskId!: string
 
     @ForeignKey(() => Label)
