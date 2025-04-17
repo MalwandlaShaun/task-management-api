@@ -6,13 +6,12 @@ import { TaskLabel } from './TaskLabel'
     tableName: 'labels'
 })
 export class Label extends Model {
-    @Column({
+     @Column({
         type: DataType.UUID,
         defaultValue: DataType.UUIDV4,
         primaryKey: true
     })
-    // @ts-ignore
-    id!: string
+     declare id: string
 
     @Column({
         type: DataType.STRING,

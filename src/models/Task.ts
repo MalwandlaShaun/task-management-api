@@ -25,7 +25,7 @@ export class Task extends Model {
         defaultValue: DataType.UUIDV4,
         primaryKey: true
     })
-    // @ts-ignore
+
     id!: string
 
     @Column({
